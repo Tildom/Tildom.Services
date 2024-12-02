@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PublishAot>false</PublishAot>
@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Tildom.Services</PackageId>
     <Title>Tildom.Services</Title>
-    <Version>8.0.0</Version>
+    <Version>8.1.0</Version>
     <PackageProjectUrl>https://github.com/Tildom/Tildom.Services</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Tildom/Tildom.Services</RepositoryUrl>
     <Authors>Pauly</Authors>
@@ -24,6 +24,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="Bitwarden.Sdk.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="bitwarden_c.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -48,7 +54,21 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.AI.FormRecognizer" Version="4.1.0" />
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.22.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
+    <!--<PackageReference Include="Bitwarden.Sdk" Version="0.0.1-alpha" />-->
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <PackageReference Include="Tildom.Core" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bitwarden.Sdk">
+      <HintPath>Bitwarden.Sdk.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
