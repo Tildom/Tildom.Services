@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Tildom.Services</PackageId>
     <Title>Tildom.Services</Title>
-    <Version>8.1.0</Version>
+    <Version>8.1.1</Version>
     <PackageProjectUrl>https://github.com/Tildom/Tildom.Services</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Tildom/Tildom.Services</RepositoryUrl>
     <Authors>Pauly</Authors>
@@ -56,13 +56,13 @@
     <PackageReference Include="Azure.AI.FormRecognizer" Version="4.1.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
     <!--<PackageReference Include="Bitwarden.Sdk" Version="0.0.1-alpha" />-->
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
-    <PackageReference Include="System.Text.Json" Version="9.0.0" />
-    <PackageReference Include="Tildom.Core" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
+    <PackageReference Include="System.Text.Json" Version="9.0.1" />
+    <PackageReference Include="Tildom.Core" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
