@@ -24,12 +24,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Bitwarden.Sdk.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="bitwarden_c.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -54,21 +48,15 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.AI.FormRecognizer" Version="4.1.0" />
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
-    <!--<PackageReference Include="Bitwarden.Sdk" Version="0.0.1-alpha" />-->
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
-    <PackageReference Include="System.Text.Json" Version="9.0.1" />
-    <PackageReference Include="Tildom.Core" Version="8.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Bitwarden.Sdk">
-      <HintPath>Bitwarden.Sdk.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
+    <PackageReference Include="Bitwarden.Secrets.Sdk" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
+    <PackageReference Include="System.Text.Json" Version="9.0.5" />
+    <PackageReference Include="Tildom.Core" Version="9.0.0" />
   </ItemGroup>
 
 </Project>
